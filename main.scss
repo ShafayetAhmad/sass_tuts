@@ -1,0 +1,15 @@
+$primary-color: #f00;
+$gray-color: rgb(128, 128, 128);
+$text-color: #fff;
+
+$font-weights: (
+  "normal": 400,
+  "semi-bold": 500,
+  "bold": 700,
+);
+
+body {
+  background: $gray-color;
+  color: $text-color;
+  font-weight: map-get($map: $font-weights, $key: bold);
+}
